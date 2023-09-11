@@ -3,7 +3,7 @@ function App() {
 
   return (
     <>
-      <h1>Project Temlate Created For reactJS</h1>
+      <h1>Project Template Created For reactJS from VivekCSE</h1>
     </>
   )
 }
