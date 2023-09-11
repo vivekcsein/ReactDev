@@ -1,9 +1,9 @@
-
+import Header from "./Sections/Header"
 function App() {
 
   return (
     <>
-      <h1>Project Template Created For reactJS from VivekCSE</h1>
+      <Header />
     </>
   )
 }
