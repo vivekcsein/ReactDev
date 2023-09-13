@@ -1,0 +1,17 @@
+.product_section {
+  width: 60vw;
+  height: auto;
+  margin: auto;
+  // scroll-behavior: smooth;
+  background-color: rgb(211, 108, 108);
+
+  .Card_List {
+    margin: auto;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+
+    // border: 5px solid $bg_color;
+  }
+}

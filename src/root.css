@@ -12,22 +12,14 @@
     --primary_color4: rgb(127, 223, 59);
 
     --text_color_default: #e5bb23;
-    --text_color_onhover: #e86c0d;
+    --text_color_onHover: #00ff26;
     --text_color_highlighted: #ff6f00;
-    --button_color: #ffffff;
+    --button_color: #891414;
     --button_color_onHover: #e43535;
-
-    --primary_gradient_color1: #E2B0FF;
-    --primary_gradient_color2: #9F44D3;
 
     --primary_alt_color1: #c4c4f6;
     --primary_alt_color2: #4827db;
     --primary_alt_color3: #df8a3b;
-
-    color-scheme: light dark;
-    --dark_mode: #1a1a1a;
-    --light_mode: #cccccc;
-    --night_mode: #213547;
 
     --black: #000000;
     --white: #ffffff;
@@ -39,6 +31,20 @@
     --color2: #dc6249;
     --color3: #BD4EC4;
     --color4: #5f27cd;
+
+    /* gradients */
+    --box_shadow: rgba(0, 0, 0, 0.2);
+    --primary_gradient_color1: #E2B0FF;
+    --primary_gradient_color2: #9F44D3;
+    --bg_gradient: linear-gradient(135deg,
+            #e2b0ff 10%,
+            #9f44d3 100%);
+
+    color-scheme: light dark default;
+    --dark_mode: #1a1a1a;
+    --light_mode: #cccccc;
+    --default_mode: var(--bg_gradient);
+    --night_mode: #213547;
 
     /* font cofig */
     --font_1: "Poppins";
@@ -56,6 +62,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+
+    --desktop: 1920px;
+    --laptop: 1368px;
+    --tablet: 960px;
+    --phone: 720px;
 
 }
 
@@ -76,26 +87,27 @@ html {
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(var(--base_gradient_color2), var(--base_gradient_color1));
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background-image: linear-gradient(var(--primary_gradient_color1), var(--primary_gradient_color2));
     /* background-image: linear-gradient(135deg, #F97794 10%, #623AA2 100%); */
     /* background-image: linear-gradient(135deg, #F97794 10%, #623AA2 100%); */
 
     /* fallback for old browsers */
-    background-image: -webkit-linear-gradient(to right, var(--base_gradient_color1), var(--base_gradient_color2));
+    /* background-image: -webkit-linear-gradient(to right, var(--primary_gradient_color1), var(--primary_gradient_color2)); */
     /* Chrome 10-25, Safari 5.1-6 */
-    background-image: linear-gradient(to right, var(--base_gradient_color1), var(--base_gradient_color2));
+    /* background-image: linear-gradient(to right, var(--primary_gradient_color1), var(--primary_gradient_color2)); */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-image: linear-gradient(135deg, var(--base_gradient_color1) 10%, var(--base_gradient_color2) 50%);
+    /* background-image: linear-gradient(135deg, var(--primary_gradient_color1) 10%, var(--primary_gradient_color2) 50%); */
 
-    background: var(--dark_mode);
+    /* background: var(--default_mode); */
 }
 
 h1 {
-    font-family: var(--font_3);
-    font-size: 3rem;
-    color: #4827db
+    font-family: var(--font_5);
+    /* font-size: 3rem; */
+    font-weight: 600;
+    color: var(--color1);
 }
 
 h2 {
@@ -105,6 +117,7 @@ h2 {
 p {
     font-family: var(--font_4);
     font-weight: lighter;
+    color: var(--color0);
 }
 
 a {
@@ -118,7 +131,7 @@ a {
     justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: default) {
     :root {
         background-color: #213547;
         color: #ffffff;

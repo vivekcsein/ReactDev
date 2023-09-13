@@ -1,8 +1,6 @@
-import "../Styles/SelectionBox.scss"
+import "../Styles/Components/SelectionBox.scss";
 const SelectionBox = () => {
-    return (
-        <div>SelectionBox</div>
-    )
-}
+  return <div>SelectionBox</div>;
+};
 
-export default SelectionBox
+export default SelectionBox;

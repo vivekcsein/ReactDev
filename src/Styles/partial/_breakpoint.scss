@@ -1,0 +1,76 @@
+$breakpoints: (
+  "xs": 0,
+  "phone": 480px,
+  "mobile": 720px,
+  "tablet": 960px,
+  "laptop": 1368px,
+  "desktop": 1920,
+);
+
+$font_size: (
+  "xs": 8px,
+  "phone": 16px,
+  "mobile": 20px,
+  "tablet": 24px,
+  "laptop": 28px,
+  "desktop": 32px,
+);
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints,"xs")) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (min-width: map-get($breakpoints,"phone")) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (min-width: map-get($breakpoints,"mobile")) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: map-get($breakpoints,"tablet")) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media (min-width: map-get($breakpoints,"laptop")) {
+    @content;
+  }
+}
+
+@mixin breakpoint($bp: 1920px) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+.responsive_text {
+  @include xs {
+    color: red;
+    font-size: map-get($map: font_size, $key: "xs");
+  }
+  @include phone {
+    color: red;
+    font-size: map-get($map: font_size, $key: "phone");
+  }
+  @include mobile {
+    color: red;
+    font-size: map-get($map: font_size, $key: "mobile");
+  }
+  @include tablet {
+    color: red;
+    font-size: map-get($map: font_size, $key: "tablet");
+  }
+  @include laptop {
+    color: red;
+    font-size: map-get($map: font_size, $key: "laptop");
+  }
+  @include desktop {
+    color: red;
+    font-size: map-get($map: font_size, $key: "desktop");
+  }
+}

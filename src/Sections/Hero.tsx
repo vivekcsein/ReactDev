@@ -1,10 +1,12 @@
+import "../Styles/Sections/Hero.scss";
 
-import "../Styles/Hero.scss"
 
 const Hero = () => {
-    return (
-        <div>Hero</div>
-    )
-}
+  return (
+    <div className="Hero_section">
 
-export default Hero
+    </div>
+  );
+};
+
+export default Hero;

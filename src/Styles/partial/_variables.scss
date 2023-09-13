@@ -1,0 +1,39 @@
+$primary_color1: #010100;
+/* color: 30%;; */
+$primary_color2: #d1903b;
+/* color: 10%;; */
+$primary_color3: rgba(122, 133, 255, 0.7);
+/* color: 1%;; */
+$primary_color4: rgb(127, 223, 59);
+
+$text_color_default: #e5bb23;
+$text_color_onHover: #00ff26;
+$text_color_highlighted: #ff6f00;
+$button_color: #891414;
+$button_color_onHover: #e43535;
+
+$primary_alt_color1: #c4c4f6;
+$primary_alt_color2: #4827db;
+$primary_alt_color3: #df8a3b;
+
+$black: #000000;
+$white: #ffffff;
+$blue_fav: #4e4ee3;
+$pink_fav: #b4238e;
+$purple_fav: #ff9ff3;
+$color0: #69e9f5;
+$color1: #ffd000;
+$color2: #dc6249;
+$color3: #bd4ec4;
+$color4: #5f27cd;
+
+/* gradients */
+$box_shadow: rgba(0, 0, 0, 0.2);
+$primary_gradient_color1: #e2b0ff;
+$primary_gradient_color2: #9f44d3;
+$bg_gradient: linear-gradient(135deg, #e2b0ff 10%, #9f44d3 100%);
+
+$color-scheme: light dark;
+$dark_mode: #1a1a1a;
+$light_mode: #cccccc;
+$night_mode: #213547;

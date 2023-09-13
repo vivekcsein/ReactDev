@@ -1,0 +1,31 @@
+.Card {
+  width: 300px;
+  height: auto;
+  border: 3px solid var(--box_shadow);
+  border-radius: 0px 0px 50px 50px;
+  margin: 2rem;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  &:hover {
+    scale: 1.1;
+    transition: 0.2s linear;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  > h1 {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    font-size: x-large;
+  }
+  p {
+    // background-color: aqua;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
