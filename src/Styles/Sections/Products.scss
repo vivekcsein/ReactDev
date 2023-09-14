@@ -1,16 +1,19 @@
+@use "../Style.scss" as style;
 .product_section {
-  width: 60vw;
+  width: 70vw;
   height: auto;
   margin: auto;
-  // scroll-behavior: smooth;
-  background-color: rgb(211, 108, 108);
+  background-color: nth(style.$bg_color, 3);
 
   .Card_List {
     margin: auto;
-    width: 80%;
-    height: 60%;
+    width: 100%;
+    // height: 60%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
+    // margin: auto;
 
     // border: 5px solid $bg_color;
   }

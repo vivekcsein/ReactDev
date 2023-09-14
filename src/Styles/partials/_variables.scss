@@ -1,0 +1,79 @@
+$primary_color1: #010100;
+/* color: 30%;; */
+$primary_color2: #d1903b;
+/* color: 10%;; */
+$primary_color3: rgba(122, 133, 255, 0.7);
+/* color: 1%;; */
+$primary_color4: rgb(127, 223, 59);
+
+$text_color_default: #e5bb23;
+$text_color_onHover: #00ff26;
+$text_color_highlighted: #ff6f00;
+$button_color: #891414;
+$button_color_onHover: #e43535;
+
+$primary_alt_color1: #c4c4f6;
+$primary_alt_color2: #4827db;
+$primary_alt_color3: #df8a3b;
+
+$black: #000000;
+$white: #ffffff;
+$red: #ff0000;
+$blue_fav: #4e4ee3;
+$pink_fav: #b4238e;
+$purple_fav: #ff9ff3;
+$orange_fav: #d36c6c;
+$color1: #ffd000;
+$color2: #dc6249;
+$color3: #bd4ec4;
+$color4: #5f27cd;
+$color5: #69e9f5;
+
+$bg_color1: #ffd000;
+$bg_color2: #dc6249;
+$bg_color3: #bd4ec4;
+$bg_color4: #5f27cd;
+$bg_color5: #69e9f5;
+
+/* gradients */
+$box_shadow: rgba(0, 0, 0, 0.2);
+$primary_gradient_color1: #e2b0ff;
+$primary_gradient_color2: #9f44d3;
+$gradient: linear-gradient(
+  135deg,
+  primary_gradient_color1 10%,
+  primary_gradient_color2 100%
+);
+
+$color-scheme: light dark;
+$dark_mode: #1a1a1a;
+$light_mode: #cccccc;
+$night_mode: #213547;
+
+$colorPallet: (
+  "primary": $primary_color1,
+  "secondary": $primary_color2,
+  "special": $primary_color3,
+  "error": $primary_color4,
+  "gradient": $gradient,
+  "text": $text_color_default,
+  "textonHover": $text_color_onHover,
+  "text_highlight": $text_color_highlighted,
+  "button": $button_color,
+  "buttononHover": $button_color_onHover,
+);
+
+$primary_color: (
+  $primary_color1,
+  $primary_color2,
+  $primary_color3,
+  $primary_color4
+);
+
+$bg_color: ($bg_color1, $bg_color2, $bg_color3, $bg_color4);
+
+$colorRange: ($color1, $color2, $color3, $color4, $color4);
+
+$colorFav: ($blue_fav, $pink_fav, $purple_fav, $orange_fav);
+
+// @forward "variables" as variables-*;

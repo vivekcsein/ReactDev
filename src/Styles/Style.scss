@@ -1,13 +1,11 @@
 //varibales & functions
-@import "./partial/variables";
+@forward "./partials/variables";
+// @use "./partials/variables";
 
 //base and layout
-@import "./partial/base";
+// @forward "./partials/base";
 
 // @import "breakpoint";
-
-//colors
-@import "./partial/colors";
 
 //components(buttons,card, navbar)
 
