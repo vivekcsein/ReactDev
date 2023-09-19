@@ -29,6 +29,8 @@ interface power {
 }
 
 const Card = ({ cardData }: propObj) => {
+  console.log(cardData);
+
   const onImageCick = () => {
     window.open(cardData?.redirect, "_blank");
   };
