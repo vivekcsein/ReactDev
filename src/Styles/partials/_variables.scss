@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&family=Open+Sans:wght@300;400&family=Poppins:wght@200;400;600&family=Roboto:wght@400;500&family=Work+Sans:ital,wght@0,300;1,400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
 $primary_color1: #010100;
 /* color: 30%;; */
 $primary_color2: #d1903b;
@@ -45,7 +49,7 @@ $gradient: linear-gradient(
   primary_gradient_color2 100%
 );
 
-$color-scheme: light dark;
+$color_scheme: light dark;
 $dark_mode: #1a1a1a;
 $light_mode: #cccccc;
 $night_mode: #213547;
@@ -72,8 +76,73 @@ $primary_color: (
 
 $bg_color: ($bg_color1, $bg_color2, $bg_color3, $bg_color4);
 
-$colorRange: ($color1, $color2, $color3, $color4, $color4);
+$colorRange: ($color1, $color2, $color3, $color4, $color5);
 
 $colorFav: ($blue_fav, $pink_fav, $purple_fav, $orange_fav);
 
-// @forward "variables" as variables-*;
+$colorBtn: ($button_color, $button_color_onHover);
+
+$Header_height: 5rem;
+
+$ff1: "Poppins";
+$ff2: "Roboto";
+$ff3: "Catamaran";
+$ff4: "Verdana";
+$ff5: "Open Sans";
+$ff6: "Work Sans";
+$ff7: "sans-serif";
+$font_default_size: 1.2rem;
+$font_onHover_size: 1.5rem;
+
+$font_family: ($ff1, $ff2, $ff3, $ff4, $ff5, $ff6, $ff7);
+
+@keyframes animateNavLikeButton {
+  0% {
+    background-color: nth($colorBtn, 1);
+    border-radius: 0;
+  }
+  100% {
+    background-color: nth($colorBtn, 2);
+    border-radius: 2rem;
+  }
+}
+
+@keyframes gayab {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@mixin Anim_animateNavLikeButton {
+  background-color: nth($colorBtn, 2);
+  border-radius: 2rem;
+  animation: animateNavLikeButton 0.1s linear;
+}
+
+@mixin hide_opacity($time: 1s) {
+  opacity: 0;
+  animation: gayab $time linear;
+}
+
+@mixin btn_type1 {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-family: var(--font_4);
+  font-weight: bold;
+  &:hover {
+    @include Anim_animateNavLikeButton;
+  }
+}
+
+@mixin btn_type2 {
+  cursor: pointer;
+  background-color: $white;
+  padding: 0rem 0.5rem;
+}
+
+@mixin toggle_hide($show) {
+  display: $show;
+}

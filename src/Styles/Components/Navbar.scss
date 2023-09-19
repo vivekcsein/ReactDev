@@ -1,0 +1,50 @@
+@use "../Style.scss" as *;
+
+.Navbar_ul {
+  width: 100%;
+  height: $Header_height;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+
+  @include res_phone {
+    background-color: $black;
+    height: auto;
+    display: none;
+    height: auto;
+  }
+  .button_type1 {
+    @include btn_type1;
+  }
+  > li {
+    &:hover {
+      .dropdown {
+        @include res_desktop {
+          display: block;
+        }
+        @include res_phone {
+          display: none;
+        }
+      }
+      .button_type2 {
+        @include res_desktop {
+          display: none;
+        }
+        @include res_phone {
+          display: block;
+          @include hide_opacity(1s);
+        }
+      }
+    }
+  }
+
+  .button_type2 {
+    @include btn_type2;
+    @include toggle_hide(none);
+    position: absolute;
+    opacity: 0.8;
+    margin-top: -2rem;
+    margin-right: -12rem;
+  }
+}

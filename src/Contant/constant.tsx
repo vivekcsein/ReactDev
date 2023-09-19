@@ -11,7 +11,7 @@ export const nav_Links = [
   { value: 2, href: "#about-us", label: "About Us", dropdown: false },
   {
     value: 3,
-    href: "#products",
+    href: "#",
     label: "Products",
     dropdown: true,
     details: products_DropDown,
@@ -99,6 +99,30 @@ export const Card_List = [
     label: "Sage",
     details: "Like Subscribe & share",
   },
+];
+
+export const total_Valo_Agent = [
+  "valorant-Brim",
+  "valorant-Sage",
+  "valorant-Jett",
+  "valorant-Skye",
+  "valorant-Reyna",
+  "valorant-Fade",
+  "valorant-Yoru",
+  "valorant-astra",
+  "valorant-breach",
+  "valorant-omen",
+  "valorant-raze",
+  "valorant-cypher",
+  "valorant-sova",
+  "valorant-geeko",
+  "valorant-viper",
+  "valorant-pheonix",
+  "valorant-kay/o",
+  "valorant-chamber",
+  "valorant-neon",
+  "valorant-killjoy",
+  "valorant-harbor",
 ];
 
 export const Valorant_agents = [

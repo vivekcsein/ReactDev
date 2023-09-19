@@ -103,9 +103,10 @@ body {
     /* background: var(--default_mode); */
 }
 
+/* font-size: 3rem; */
+
 h1 {
     font-family: var(--font_5);
-    /* font-size: 3rem; */
     font-weight: 600;
     color: var(--color1);
 }

@@ -4,7 +4,7 @@ import "../Styles/Sections/Header.scss";
 import { Images_logo } from "../Contant/Assets";
 
 const Header = () => {
-  const burgerIconNum = 2;
+  const burgerIconNum = Math.floor(Math.random() * 4 + 1);
 
   return (
     <header className="Header">
@@ -13,10 +13,10 @@ const Header = () => {
       </div>
       <nav className="Navbar">
         <Navbar />
-        <div className="BurgerIcon flex">
-          <BurgerIcon value={burgerIconNum} />
-        </div>
       </nav>
+      <div className="BurgerIcon flex">
+        <BurgerIcon value={burgerIconNum} />
+      </div>
     </header>
   );
 };
