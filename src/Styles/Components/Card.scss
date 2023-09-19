@@ -5,12 +5,12 @@
   height: auto;
   // border: 3px solid var(--box_shadow);
   border: 3px solid style.$box_shadow;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 5vw 5vw 5vw 5vw; // fixed card roundness in small screen looking not good
   margin: 2rem 0;
   box-shadow: 0 8px 8px 0 style.$box_shadow;
   background-color: nth(style.$bg_color, 3);
   overflow: hidden;
-  transition: scale 0.2s linear;
+  transition: scale 0.1s ease-in-out;
   &:hover {
     scale: 1.1;
   }

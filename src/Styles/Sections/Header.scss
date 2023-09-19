@@ -23,6 +23,10 @@
     height: 100%;
     display: none;
   }
+  .Dropdown {
+    display: none;
+    position: relative;
+  }
 
   .Navbar {
     width: 60%;
@@ -57,10 +61,7 @@
       }
     }
   }
-  .Dropdown {
-    display: none;
-    position: relative;
-  }
+
   .Navbar_ul.nav_hide {
     display: none;
   }

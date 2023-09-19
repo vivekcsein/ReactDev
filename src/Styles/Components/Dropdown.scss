@@ -13,10 +13,12 @@
     a {
       padding: 0.7rem 1rem;
       margin: 0.25rem 0;
+      transition: 0.1s;
     }
     &:hover {
       a {
-        background-color: #abcee1;
+        scale: 1.1;
+        // background-color: #abcee1;
       }
     }
   }
