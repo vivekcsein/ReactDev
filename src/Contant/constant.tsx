@@ -206,4 +206,14 @@ export const Valorant_agents = [
     redirect: "/",
     details: "STIM BEACON, INCENDIARY, SKY SMOKE,ORBITAL STRIKE",
   },
+  {
+    value: 8,
+    src: "https://i.ibb.co/dP68DHB/Snapinsta-app-120203091-330592621509104-1505584475997865794-n-1080.jpg",
+    alt: "valorant-noob",
+    label: "Buddyshub",
+    role: "noob",
+    discription: "",
+    redirect: "/",
+    details: "multimedia dell keyboard, gaming redgear mouse, intel i3 3rd gen cpu, 4gb ram",
+  },
 ];

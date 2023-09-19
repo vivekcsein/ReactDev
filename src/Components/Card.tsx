@@ -29,15 +29,13 @@ interface power {
 }
 
 const Card = ({ cardData }: propObj) => {
-  console.log(cardData);
-
   const onImageCick = () => {
     window.open(cardData?.redirect, "_blank");
   };
 
   return (
     <div className="Card">
-      <div>
+      <div className="img-container">
         <img
           src={cardData.src}
           alt={cardData.alt}
@@ -45,11 +43,13 @@ const Card = ({ cardData }: propObj) => {
           onClick={onImageCick}
         />
       </div>
-      <h1>
-        {cardData.label} - <span>{cardData.role}</span>
-        {/* {cardData.role} */}
-      </h1>
-      <p>{cardData.details.toLowerCase()}</p>
+      <div className="details">
+        <h1>
+          {cardData.label} - <span>{cardData.role}</span>
+          {/* {cardData.role} */}
+        </h1>
+        <p>{cardData.details.toLowerCase()}</p>
+      </div>
     </div>
   );
 };
