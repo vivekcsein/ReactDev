@@ -1,23 +1,35 @@
 @use "../Style.scss" as style;
 
 .Card {
+  // Neumorphism
+  box-shadow: 9.91px 9.91px 15px #a043a7, -9.91px -9.91px 15px #d158da;
+
+  // style
   width: 300px;
   height: auto;
   // border: 3px solid var(--box_shadow);
-  border: 3px solid style.$box_shadow;
-  border-radius: 5vw 5vw 5vw 5vw; // fixed card roundness in small screen looking not good
+  border: 1px solid style.$box_shadow;
+  border-radius: 10% 10% 10% 10%; // fixed card roundness in small screen looking not good
   margin: 2rem 0;
-  box-shadow: 0 8px 8px 0 style.$box_shadow;
+  // box-shadow: 0 8px 8px 0 style.$box_shadow;
   background-color: nth(style.$bg_color, 3);
+  cursor: pointer;
   overflow: hidden;
   transition: scale 0.1s ease-in-out;
   &:hover {
-    scale: 1.1;
+    img {
+      scale: 1.1;
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
   img {
     width: 100%;
-    height: auto;
-    cursor: pointer;
+    transition: scale 0.3s ease-in-out;
   }
   > h1 {
     text-align: center;

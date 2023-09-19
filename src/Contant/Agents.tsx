@@ -103,14 +103,4 @@ export const Valorant_agents = [
     redirect: "/",
     details: "STIM BEACON, INCENDIARY, SKY SMOKE,ORBITAL STRIKE",
   },
-  {
-    value: 8,
-    src: "https://i.ibb.co/cTdL6rL/valorant-brim.png",
-    alt: "valorant-noob",
-    label: "Buddy",
-    role: "God",
-    discription: "",
-    redirect: "/",
-    details: "noob gaming skills, dell multi media keyboard, regear gaming mouse",
-  },
 ];

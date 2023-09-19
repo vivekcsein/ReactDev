@@ -37,12 +37,14 @@ const Card = ({ cardData }: propObj) => {
 
   return (
     <div className="Card">
-      <img
-        src={cardData.src}
-        alt={cardData.alt}
-        key={cardData.value}
-        onClick={onImageCick}
-      />
+      <div>
+        <img
+          src={cardData.src}
+          alt={cardData.alt}
+          key={cardData.value}
+          onClick={onImageCick}
+        />
+      </div>
       <h1>
         {cardData.label} - <span>{cardData.role}</span>
         {/* {cardData.role} */}
