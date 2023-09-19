@@ -79,6 +79,7 @@
     color: var(--text_color_default);
     text-decoration: none;
     list-style: none;
+    z-index: 2;
     /*   font-size: 62.5%; */
 }
 
