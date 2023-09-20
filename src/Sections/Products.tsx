@@ -1,4 +1,4 @@
-import { Valorant_agents } from "../Contant/constant";
+import { Valorant_agents } from "../Constants/constant";
 import Card from "../Components/Card";
 import "../Styles/Sections/Products.scss";
 const Products = () => {
@@ -6,7 +6,7 @@ const Products = () => {
     <div className="product_section">
       <div className="Card_List">
         {Valorant_agents.map((item: any) => (
-          <Card cardData={item} key={item.value} />
+          <Card cardData={item} key={item.id} />
         ))}
       </div>
     </div>

@@ -1,7 +1,7 @@
 import Navbar from "../Components/Navbar";
 import BurgerIcon from "../Components/BurgerIcon";
 import "../Styles/Sections/Header.scss";
-import { Images_logo } from "../Contant/Assets";
+import { Images_logo } from "../Constants/Assets";
 
 const Header = () => {
   const burgerIconNum = Math.floor(Math.random() * 4 + 1);

@@ -1,7 +1,7 @@
 import "../Styles/Components/Card.scss";
 
 interface propObj {
-  value: number;
+  id: number;
   src: string;
   alt: string;
   label: string;
@@ -38,14 +38,12 @@ const Card = ({ cardData }: propObj) => {
       <img
         src={cardData.src}
         alt={cardData.alt}
-        key={cardData.value}
+        key={cardData.id}
         onClick={onImageCick}
       />
       <h1>
         {cardData.label} - <span>{cardData.role}</span>
-        {/* {cardData.role} */}
       </h1>
-      <p>{cardData.details.toLowerCase()}</p>
     </div>
   );
 };

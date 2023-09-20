@@ -96,6 +96,15 @@ $font_onHover_size: 1.5rem;
 
 $font_family: ($ff1, $ff2, $ff3, $ff4, $ff5, $ff6, $ff7);
 
+$font_size: (
+  "nodisplay": 8px,
+  "phone": 16px,
+  "mobile": 20px,
+  "tablet": 24px,
+  "laptop": 28px,
+  "desktop": 32px,
+);
+
 @keyframes animateNavLikeButton {
   0% {
     background-color: nth($colorBtn, 1);

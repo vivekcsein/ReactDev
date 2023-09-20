@@ -1,5 +1,5 @@
 import "./Styles/Style.scss";
-import { Pages_layout } from "./Contant/Pages";
+import { Pages_layout } from "./Constants/Pages";
 
 function App() {
   const [Hero, Header, Products, Footer] = Pages_layout;

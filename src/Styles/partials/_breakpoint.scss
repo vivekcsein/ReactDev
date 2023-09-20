@@ -8,15 +8,6 @@ $breakpoints: (
   "desktop2k": 2160,
 );
 
-$font_size: (
-  "nodisplay": 8px,
-  "phone": 16px,
-  "mobile": 20px,
-  "tablet": 24px,
-  "laptop": 28px,
-  "desktop": 32px,
-);
-
 @mixin res_desktop {
   @media (width>960px) {
     @content;
@@ -69,69 +60,3 @@ $font_size: (
     @content;
   }
 }
-
-// @mixin nodisplay {
-//   @media ((min-width: map-get($breakpoints,"nodisplay"))) {
-//     @content;
-//   }
-// }
-
-// @mixin phone {
-//   @media ((min-width: map-get($breakpoints,"nodisplay") )) {
-//     @content;
-//   }
-// }
-// @mixin mobile {
-//   @media ((min-width: map-get($breakpoints,"phone") )) {
-//     @content;
-//   }
-// }
-// @mixin tablet {
-//   @media ((min-width: map-get($breakpoints,"mobile") )) {
-//     @content;
-//   }
-// }
-// @mixin laptop {
-//   @media ((max-width: map-get($breakpoints,"tablet") )) {
-//     @content;
-//   }
-// }
-
-// @mixin desktop {
-//   @media ((min-width: map-get($breakpoints,"laptop") )) {
-//     @content;
-//   }
-// }
-
-// @mixin desktop2k {
-//   @media ((min-width: map-get($breakpoints,"desktop") )) {
-//     @content;
-//   }
-// }
-
-// .responsive_text {
-//   @include xs {
-//     color: red;
-//     font-size: map-get($map: $font_size, $key: "xs");
-//   }
-//   @include phone {
-//     color: red;
-//     font-size: map-get($map: $font_size, $key: "phone");
-//   }
-//   @include mobile {
-//     color: red;
-//     font-size: map-get($map: $font_size, $key: "mobile");
-//   }
-//   @include tablet {
-//     color: red;
-//     font-size: map-get($map: $font_size, $key: "tablet");
-//   }
-//   @include laptop {
-//     color: red;
-//     font-size: map-get($map: $font_size, $key: "laptop");
-//   }
-//   @include desktop {
-//     color: red;
-//     font-size: map-get($map: $font_size, $key: "desktop");
-//   }
-// }

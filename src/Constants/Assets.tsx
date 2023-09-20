@@ -1,4 +1,4 @@
-import logo_frnz from "../assets/FRNZ_logo_online.png";
+import logo_frnz from "../Assets/FRNZ_logo_online.png";
 
 export const Images_logo = [
     { id: 1, name: "logo_frnz", href: logo_frnz, },
