@@ -7,16 +7,16 @@ export const products_DropDown = [
 ];
 
 export const nav_Links = [
-  { value: 1, href: "#home", label: "Home", dropdown: false },
-  { value: 2, href: "#about-us", label: "About Us", dropdown: false },
+  { value: 1, href: "/", label: "Home", dropdown: false },
+  { value: 2, href: "/about-us", label: "About Us", dropdown: false },
   {
     value: 3,
-    href: "#products",
+    href: "/products",
     label: "Products",
     dropdown: true,
     details: products_DropDown,
   },
-  { value: 4, href: "#contact-us", label: "Contact Us", dropdown: false },
+  { value: 4, href: "/contact-us", label: "Contact Us", dropdown: false },
 ];
 
 export const log_Sign = [

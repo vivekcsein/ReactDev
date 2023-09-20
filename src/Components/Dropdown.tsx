@@ -1,4 +1,5 @@
 import "../Styles/Components/Dropdown.scss";
+import { NavLink } from "react-router-dom/";
 interface propObj {
   value: number;
   href: string;
@@ -14,7 +15,7 @@ const Dropdown = ({ propdata }: { propdata: propType }) => {
     <ul className="Dropdown_ul">
       {propdata.map((item: any) => (
         <li key={item.label}>
-          <a href={item.href}>{item.label}</a>
+          <NavLink to={item.href}>{item.label}</NavLink>
         </li>
       ))}
     </ul>
