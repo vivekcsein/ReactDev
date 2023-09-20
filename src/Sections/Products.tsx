@@ -1,4 +1,4 @@
-import { Valorant_agents } from "../Constants/constant";
+import { Valorant_agents } from "../Constants/Constant";
 import Card from "../Components/Card";
 import "../Styles/Sections/Products.scss";
 const Products = () => {

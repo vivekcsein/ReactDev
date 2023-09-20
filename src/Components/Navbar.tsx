@@ -1,4 +1,4 @@
-import { nav_Links } from "../Constants/constant";
+import { nav_Links } from "../Constants/Constant";
 import Dropdown from "./Dropdown";
 import "../Styles/Components/Navbar.scss";
 // import { useMemo } from "react";
