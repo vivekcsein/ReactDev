@@ -7,7 +7,7 @@ function App() {
     <>
       <Header />
       <Hero />
-      <Products />
+      {/* <Products /> */}
       <Footer />
     </>
   );

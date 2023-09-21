@@ -32,7 +32,6 @@
     border: 2px solid $border_color;
     background-color: $white;
     font-size: medium;
-    color: red;
     @include res_phone {
       @include phone {
         width: 90%;
@@ -60,6 +59,10 @@
       border: none;
       // background-color: nth($list: $bg_color, $n: 2);
       padding: 0.5rem 0;
+    }
+    button {
+      border: none;
+      background-color: $white;
     }
   }
 
