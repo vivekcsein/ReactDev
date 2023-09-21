@@ -5,14 +5,14 @@ type prop = {
 type element = HTMLElement | Element | null;
 
 const BurgerIcon = (prop: prop) => {
-  let button_type2: any;
+  let button_info: any;
   let burgerID: element;
   let Navbar_ul: element;
   const burgerIconClicked = () => {
     burgerID = document.getElementById(`burgerIcon${prop.value}`);
     Navbar_ul = document.getElementsByClassName("Navbar_ul")[0];
-    button_type2 = document.getElementsByClassName("button_type2")[0];
-    button_type2.style.opacity = 1;
+    button_info = document.getElementsByClassName("button_info")[0];
+    button_info.style.opacity = 1;
     burgerID?.classList.toggle("open");
     Navbar_ul?.classList.toggle("nav_hide");
   };

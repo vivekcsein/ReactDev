@@ -14,8 +14,8 @@
     display: none;
     height: auto;
   }
-  .button_type1 {
-    @include btn_type1;
+  .button_navbar {
+    @include btn_navbar;
   }
   > li {
     &:hover {
@@ -27,7 +27,7 @@
           display: none;
         }
       }
-      .button_type2 {
+      .button_info {
         @include res_desktop {
           display: none;
         }
@@ -39,8 +39,8 @@
     }
   }
 
-  .button_type2 {
-    @include btn_type2;
+  .button_info {
+    @include btn_info;
     @include toggle_hide(none);
     position: absolute;
     opacity: 0.8;

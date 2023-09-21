@@ -1,17 +1,7 @@
+@use "../Style.scss" as *;
 .Hero_section {
-  width: 60vw;
-  height: auto;
+  width: 100%;
+  height: 90vh;
   margin: auto;
-  // scroll-behavior: smooth;
-  background-color: rgb(211, 108, 108);
-
-  .Card_List {
-    margin: auto;
-    width: 80%;
-    height: 60%;
-    display: flex;
-    flex-wrap: wrap;
-
-    // border: 5px solid $bg_color;
-  }
+  background-color: nth($list: $bg_color, $n: 4);
 }

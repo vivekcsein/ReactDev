@@ -985,7 +985,7 @@ export const Valorant_agents_info = [
     id: 21,
     src: "https://i.ibb.co/pnmVr9d/valorant-geeko.png",
     alt: "valorant-Geeko",
-    label: "Geeko",
+    label: "Gekko",
     role: "INITIATOR",
     discription:
       "Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.",

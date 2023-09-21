@@ -1,0 +1,81 @@
+@use "../Style.scss" as *;
+.Todo_container {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+  // background-color: aliceblue;
+  background-color: nth($list: $bg_color, $n: 3);
+
+  @include res_desktop {
+    width: 70%;
+    @include desktop {
+      width: 40%;
+    }
+  }
+  @include res_phone {
+    width: 100%;
+  }
+  h1,
+  p {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .todo_box {
+    margin: auto;
+    margin-top: 1rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+    border: 2px solid $border_color;
+    background-color: $white;
+    font-size: medium;
+    color: red;
+    @include res_phone {
+      @include phone {
+        width: 90%;
+      }
+    }
+  }
+
+  input::placeholder {
+    font-family: nth($list: $font_family, $n: 5);
+    font-weight: 600;
+    color: $text_color_default;
+    font-size: medium;
+  }
+
+  input[type="text"] {
+    font-family: nth($list: $font_family, $n: 5);
+    font-weight: 600;
+    color: $text_color_default;
+    font-size: medium;
+  }
+
+  .todo_addItems {
+    input {
+      width: 100%;
+      border: none;
+      // background-color: nth($list: $bg_color, $n: 2);
+      padding: 0.5rem 0;
+    }
+  }
+
+  .button_symbol {
+    @include btn_clickable;
+    margin: 0 1rem;
+    padding: 0.33rem;
+  }
+
+  .todo_showItem {
+    padding: 1rem 0;
+    .todo_eachItem {
+      background-color: nth($list: $bg_color, $n: 4);
+      p {
+        width: 80%;
+      }
+    }
+  }
+}

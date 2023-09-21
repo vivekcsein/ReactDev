@@ -10,11 +10,14 @@ $primary_color3: rgba(122, 133, 255, 0.7);
 /* color: 1%;; */
 $primary_color4: rgb(127, 223, 59);
 
-$text_color_default: #e5bb23;
+$text_color_default: #1900ff;
 $text_color_onHover: #00ff26;
 $text_color_highlighted: #ff6f00;
-$button_color: #891414;
+
+// button color
+$button_color: #f90c0cca;
 $button_color_onHover: #e43535;
+$border_color: #bcf92edc;
 
 $primary_alt_color1: #c4c4f6;
 $primary_alt_color2: #4827db;
@@ -80,7 +83,7 @@ $colorRange: ($color1, $color2, $color3, $color4, $color5);
 
 $colorFav: ($blue_fav, $pink_fav, $purple_fav, $orange_fav);
 
-$colorBtn: ($button_color, $button_color_onHover);
+$colorBtn: ($button_color, $button_color_onHover, $gradient);
 
 $Header_height: 5rem;
 
@@ -136,7 +139,21 @@ $font_size: (
   animation: gayab $time linear;
 }
 
-@mixin btn_type1 {
+@mixin btn_main {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-family: var(--font_4);
+  font-weight: bold;
+  background-color: nth($colorBtn, 1);
+  border-radius: 2rem;
+  border: none;
+  &:hover {
+    background-color: nth($colorBtn, 2);
+    transition: all 0.1s linear;
+  }
+}
+
+@mixin btn_navbar {
   cursor: pointer;
   padding: 1rem 2rem;
   font-family: var(--font_4);
@@ -146,7 +163,7 @@ $font_size: (
   }
 }
 
-@mixin btn_type2 {
+@mixin btn_info {
   cursor: pointer;
   background-color: $white;
   padding: 0rem 0.5rem;
@@ -154,4 +171,16 @@ $font_size: (
 
 @mixin toggle_hide($show) {
   display: $show;
+}
+
+@mixin input_box($inputWidth: 600px) {
+  width: calc(var($inputWidth) * 3 + (calc((#{$space}) * 6)));
+}
+
+@mixin btn_clickable {
+  background-color: nth($colorBtn, 1);
+  &:hover {
+    cursor: pointer;
+    background-color: nth($colorBtn, 2);
+  }
 }
