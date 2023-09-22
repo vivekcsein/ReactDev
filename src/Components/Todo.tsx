@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../Styles/Components/Todo.scss";
 import TodoForm from "./files/Todo/TodoForm";
 import TodoItemList from "./files/Todo/TodoItemList";
@@ -12,7 +12,19 @@ interface todoList {
 }
 
 const Todo = () => {
-  const [todoList, setTodoList] = useState<todoList[]>([]);
+  let dataFromLocalStorage;
+  const [todoList, setTodoList] = useState<todoList[]>(() => {
+    dataFromLocalStorage = localStorage.getItem("todos");
+    if (dataFromLocalStorage != null) {
+      return JSON.parse(dataFromLocalStorage);
+    } else {
+      return [];
+    }
+  });
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todoList));
+  }, [todoList]);
 
   const addTodoList = (todos: todos) => {
     setTodoList((t: any) => [
