@@ -27,14 +27,22 @@
     height: $Header_height;
     z-index: 1;
     display: none;
-    > div {
-      display: none;
-    }
+    // > div {
+    //   display: none;
+    // }
     @include res_phone {
       display: flex;
-      > div {
-        display: block;
-      }
+      // > div {
+      //   display: block;
+      // }
+    }
+  }
+  .toggle_BurgerIcon {
+    @include res_phone {
+      @include toggle_hide("block");
+    }
+    @include res_desktop {
+      @include toggle_hide(none);
     }
   }
 

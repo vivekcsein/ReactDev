@@ -12,7 +12,7 @@ const Header = () => {
         <img src={Images_logo[0].href} alt="logo" />
       </div>
       <nav className="Navbar">
-        <Navbar />
+        <Navbar value={burgerIconNum} />
       </nav>
       <div className="BurgerIcon flex">
         <BurgerIcon value={burgerIconNum} />

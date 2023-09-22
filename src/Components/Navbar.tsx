@@ -1,27 +1,37 @@
 import { nav_Links } from "../Constants/Constant";
 import Dropdown from "./Dropdown";
 import "../Styles/Components/Navbar.scss";
-// import { useMemo } from "react";
 
-const Navbar = () => {
+type element = HTMLElement | Element | null;
+type prop = {
+  value: number;
+};
+const Navbar = ({ value }: prop) => {
   const toggleArrow_Up = "expand_more";
   let toggleArrow: Element;
   let toggledropdown: any;
   let button_info: any;
+  let burgerIconClass: element;
   const dropdownClicked = () => {
     toggleArrow = document.getElementsByClassName("toggleArrow")[0];
     toggledropdown = document.getElementsByClassName("dropdown")[0];
     button_info = document.getElementsByClassName("button_info")[0];
-    if (toggleArrow.innerHTML === "expand_more") {
-      toggleArrow.innerHTML = "expand_less";
-      toggledropdown.style.display = "block";
-      button_info.style.display = "none";
-      button_info.style.opacity = 0;
-    } else {
-      toggleArrow.innerHTML = "expand_more";
-      toggledropdown.style.display = "none";
-      button_info.style.display = "block";
-      button_info.style.opacity = 0;
+    burgerIconClass = document.getElementById(`burgerIcon${value}`);
+
+    if (burgerIconClass !== null) {
+      if (window.getComputedStyle(burgerIconClass).display === "block") {
+        if (toggleArrow.innerHTML === "expand_more") {
+          toggleArrow.innerHTML = "expand_less";
+          toggledropdown.style.display = "block";
+          button_info.style.display = "none";
+          button_info.style.opacity = 0;
+        } else {
+          toggleArrow.innerHTML = "expand_more";
+          toggledropdown.style.display = "none";
+          button_info.style.display = "none";
+          button_info.style.opacity = 0;
+        }
+      }
     }
   };
 
@@ -40,7 +50,7 @@ const Navbar = () => {
                 <span className="button_info">Click Here</span>
               </li>
               <li className="dropdown">
-                <Dropdown propdata={item.details} />
+                <Dropdown data={item.details} />
               </li>
             </ul>
           ) : (
