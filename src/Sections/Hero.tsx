@@ -1,11 +1,15 @@
 import "../Styles/Sections/Hero.scss";
-import "../Components/Todo";
-import Todo from "../Components/Todo";
+import FormUser from "../Components/FormUser";
+// import SelectionBox from "../Components/SelectionBox";
+// import Form from "../Components/Form";
+
+// import { season_Theme } from "../Constants/Constant";
 
 const Hero = () => {
   return (
     <div className="Hero_section ">
-      <Todo />
+      <FormUser />
+      {/* <SelectionBox options={season_Theme} /> */}
     </div>
   );
 };

@@ -1,0 +1,57 @@
+@use "../Style.scss" as *;
+.FormUser {
+  width: 60%;
+  margin: auto;
+  background-color: nth($list: $bg_color, $n: 3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0;
+
+  input {
+    width: 100% !important ;
+    padding: 0.7rem;
+  }
+  input::placeholder {
+    @include placeholder;
+  }
+  input[type="text"] {
+    @include inputText;
+  }
+  input[type="password"] {
+    @include inputText;
+  }
+}
+
+.formInput_default {
+  width: 80% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: auto;
+  position: relative;
+  .passwordVisibleIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    cursor: pointer;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    box-shadow: 2px 5px $box_shadow;
+  }
+}
+
+.formInput_1 {
+  @extend .formInput_default;
+  label {
+    @include placeholder;
+  }
+  span {
+    padding: 0.2rem;
+  }
+}

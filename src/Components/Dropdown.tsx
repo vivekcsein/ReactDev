@@ -16,7 +16,7 @@ const Dropdown = ({ data }: prop) => {
     <ul className="Dropdown_ul">
       {data != undefined
         ? data.map((item: any) => (
-            <li key={item.label} className=" flex button_navbar">
+            <li key={item.label} className=" flex_center button_navbar">
               <a href={item.href}>{item.label}</a>
             </li>
           ))

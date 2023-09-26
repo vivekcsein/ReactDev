@@ -8,13 +8,13 @@ const Header = () => {
 
   return (
     <header className="Header">
-      <div className="Header_logo flex">
+      <div className="Header_logo flex_center">
         <img src={Images_logo[0].href} alt="logo" />
       </div>
       <nav className="Navbar">
         <Navbar value={burgerIconNum} />
       </nav>
-      <div className="BurgerIcon flex">
+      <div className="BurgerIcon flex_center">
         <BurgerIcon value={burgerIconNum} />
       </div>
     </header>

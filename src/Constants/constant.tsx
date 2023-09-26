@@ -34,12 +34,19 @@ export const social_Media = [
 ];
 
 export const monthy_Theme = [
-  { value: 1, label: "jan", theme: "sky" },
-  { value: 2, label: "feb", theme: "pink" },
-  { value: 3, label: "mar", theme: "voilet" },
-  { value: 4, label: "april", theme: "yellow" },
-  { value: 5, label: "may", theme: "red" },
-  { value: 6, label: "june", theme: "hotpink" },
+  { id: 1, label: "jan", theme: "skyblue" },
+  { id: 2, label: "feb", theme: "pink" },
+  { id: 3, label: "mar", theme: "voilet" },
+  { id: 4, label: "april", theme: "yellow" },
+  { id: 5, label: "may", theme: "red" },
+  { id: 6, label: "june", theme: "hotpink" },
+];
+
+export const season_Theme = [
+  { id: 1, label: "Spring", theme: "pink" },
+  { id: 2, label: "Summer", theme: "yellow" },
+  { id: 3, label: "Rainy", theme: "skyblue" },
+  { id: 4, label: "Winter", theme: "skyblue" },
 ];
 
 export const footer_Links = [

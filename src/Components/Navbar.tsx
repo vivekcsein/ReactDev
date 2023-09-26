@@ -42,7 +42,10 @@ const Navbar = ({ value }: prop) => {
           {/* logic for dropdown */}
           {item.dropdown ? (
             <ul>
-              <li className="flex button_navbar" onClick={dropdownClicked}>
+              <li
+                className="flex_center button_navbar"
+                onClick={dropdownClicked}
+              >
                 {item.label}
                 <span className="material-symbols-sharp toggleArrow ">
                   {toggleArrow_Up}
@@ -54,7 +57,7 @@ const Navbar = ({ value }: prop) => {
               </li>
             </ul>
           ) : (
-            <a href={item.href} className=" flex button_navbar">
+            <a href={item.href} className=" flex_center button_navbar">
               {item.label}
             </a>
           )}

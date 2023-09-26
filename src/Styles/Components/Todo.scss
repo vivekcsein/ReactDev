@@ -40,17 +40,11 @@
   }
 
   input::placeholder {
-    font-family: nth($list: $font_family, $n: 5);
-    font-weight: 600;
-    color: $text_color_default;
-    font-size: medium;
+    @include placeholder;
   }
 
   input[type="text"] {
-    font-family: nth($list: $font_family, $n: 5);
-    font-weight: 600;
-    color: $text_color_default;
-    font-size: medium;
+    @include inputText;
   }
 
   .todo_addItems {

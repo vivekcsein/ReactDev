@@ -13,10 +13,12 @@
     scale: 1.1;
     transition: 0.2s linear;
   }
-  img {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
+  > div {
+    img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
   }
   > h1 {
     text-align: center;

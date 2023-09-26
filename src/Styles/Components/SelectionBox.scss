@@ -1,0 +1,4 @@
+@use "../Style.scss" as *;
+.selectionBox {
+  @include selectionBox;
+}

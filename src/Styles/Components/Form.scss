@@ -1,0 +1,38 @@
+@use "../Style.scss" as *;
+
+.form_user {
+  width: 60%;
+  margin: auto;
+  background-color: nth($list: $bg_color, $n: 3);
+  h1 {
+    font-size: 3rem !important;
+  }
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    // margin: auto;
+  }
+}
+.form_signup {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: normal;
+  input {
+    width: 80%;
+    // width: 300px;
+    margin: 0.5rem auto;
+    padding: 0.5rem 0.5rem;
+    font-size: x-large;
+  }
+  input::placeholder {
+    @include placeholder;
+  }
+  input[type="text"] {
+    @include inputText;
+  }
+}

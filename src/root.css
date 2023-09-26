@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&family=Open+Sans:wght@300;400&family=Poppins:wght@200;400;600&family=Roboto:wght@400;500&family=Work+Sans:ital,wght@0,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Catamaran:wght@200;400;600;700;800;900&family=Nunito:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;600&family=Overpass:wght@300;400;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&family=Work+Sans:wght@300;400;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
 
 :root {
 
@@ -11,8 +15,9 @@
     /* color: 1%;; */
     --primary_color4: rgb(127, 223, 59);
 
-    --text_color_default: #e5bb23;
-    --text_color_onHover: #00ff26;
+
+    --text_color_default: #00ff26;
+    --text_color_onHover: #e5bb23;
     --text_color_highlighted: #ff6f00;
     --button_color: #891414;
     --button_color_onHover: #e43535;
@@ -40,6 +45,22 @@
             #e2b0ff 10%,
             #9f44d3 100%);
 
+    --Spring: linear-gradient(135deg,
+            #e2b0ff 10%,
+            #9f44d3 100%);
+
+    --Summer: linear-gradient(135deg,
+            #ffffb0 10%,
+            #e6d91d 100%);
+
+    --Rainy: linear-gradient(135deg,
+            #b0eeff 10%,
+            #77a4e7 100%);
+
+    --Winter: linear-gradient(135deg,
+            #b0ccff 10%,
+            #2a24eb 100%);
+
     color-scheme: light dark default;
     --dark_mode: #1a1a1a;
     --light_mode: #cccccc;
@@ -47,13 +68,15 @@
     --night_mode: #213547;
 
     /* font cofig */
-    --font_1: "Poppins";
-    --font_2: "Roboto";
-    --font_3: "Catamaran";
-    --font_4: "Verdana";
-    --font_5: "Open Sans";
-    --font_6: "Work Sans";
-    --font_7: "sans-serif";
+    --ff1: "Roboto";
+    --ff2: "Poppins";
+    --ff3: "Nunito";
+    --ff4: "Catamaran";
+    --ff5: "Cabin";
+    --ff6: "Overpass";
+    --ff7: "Work Sans";
+    --ff8: "Open Sans";
+    --ff9: "sans-serif";
     --font_default_size: 1.2rem;
     --font_onHover_size: 1.5rem;
 
@@ -67,7 +90,6 @@
     --laptop: 1368px;
     --tablet: 960px;
     --phone: 720px;
-
 }
 
 * {
@@ -75,11 +97,11 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: var(--font_1), var(--font_2), var(--font_3), var(--font_4), var(--font_5), var(--font_6), var(--font_7) "Segoe UI", Geneva, Tahoma, sans-serif;
+    font-family: var(--font_1), var(--font_2), var(--font_3), var(--font_4), var(--font_5), var(--font_6), var(--font_7), var(--font_8), sans-serif;
     color: var(--text_color_default);
     text-decoration: none;
     list-style: none;
-    /*   font-size: 62.5%; */
+    /* font-size: 62.5%;     */
 }
 
 html {
@@ -89,7 +111,7 @@ html {
 body {
     /* width: 100vw; */
     /* height: 100vh; */
-    background-image: linear-gradient(var(--primary_gradient_color1), var(--primary_gradient_color2));
+    /* background-image: linear-gradient(var(--primary_gradient_color1), var(--primary_gradient_color2)); */
     /* background-image: linear-gradient(135deg, #F97794 10%, #623AA2 100%); */
     /* background-image: linear-gradient(135deg, #F97794 10%, #623AA2 100%); */
 
@@ -101,6 +123,7 @@ body {
     /* background-image: linear-gradient(135deg, var(--primary_gradient_color1) 10%, var(--primary_gradient_color2) 50%); */
 
     /* background: var(--default_mode); */
+    background-color: var(--default_mode);
 }
 
 /* font-size: 3rem; */
@@ -108,23 +131,26 @@ body {
 h1,
 h2,
 h3 {
-    font-family: var(--font_2);
-    font-weight: 600;
+    font-family: var(--ff1), var(--ff4);
+    font-weight: 700;
     color: var(--color3);
 }
 
 p {
-    font-family: var(--font_1);
-    font-weight: 400;
+    font-family: var(--ff2);
+    font-weight: regular;
     color: var(--color0);
 }
 
+li,
 a {
-    font-family: var(--font_4);
-    font-weight: bold;
+    font-family: var(--ff3);
+    font-weight: 700;
+    color: #00ff26;
+    font-size: var(--font_default_size);
 }
 
-.flex {
+.flex_center {
     display: flex;
     align-items: center;
     justify-content: center;

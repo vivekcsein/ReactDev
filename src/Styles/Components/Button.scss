@@ -1,0 +1,47 @@
+@use "../Style.scss" as *;
+
+.button_component {
+  width: fit-content !important ;
+  background-color: $black;
+  padding: 0.5rem 1rem;
+  // margin: auto;
+  //   border: 2px solid $border_color;
+  border: none;
+  box-shadow: 0px 6px $border_color;
+  h1 {
+    color: $text_color_default;
+  }
+
+  p {
+    color: $text_color_default;
+    font-size: large;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 6px $border_color_onHover;
+    transition: all 0.2s linear;
+    p {
+      color: $text_color_onHover;
+    }
+  }
+
+  &:active {
+    box-shadow: 0px 6px $border_color_onHover;
+    p {
+      color: $text_color_onHover;
+    }
+  }
+  .button_component_normal {
+    box-shadow: 0px 6px $border_color;
+    p {
+      color: $text_color_default;
+    }
+  }
+  .button_component_active {
+    box-shadow: 0px 6px $border_color_onHover;
+    p {
+      color: $text_color_onHover;
+    }
+  }
+}
