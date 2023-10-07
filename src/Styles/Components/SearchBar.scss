@@ -1,0 +1,16 @@
+@use "../Style.scss" as *;
+@use "../ExportVar.scss" as *;
+
+.SearchBar {
+  width: 100%;
+  padding: 2rem 0;
+  // background-color: aqua;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  input {
+    width: 60%;
+    @include inputBox;
+  }
+}

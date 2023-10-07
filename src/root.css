@@ -122,8 +122,8 @@ body {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* background-image: linear-gradient(135deg, var(--primary_gradient_color1) 10%, var(--primary_gradient_color2) 50%); */
 
-    /* background: var(--default_mode); */
-    background-color: var(--default_mode);
+    background: var(--default_mode);
+    /* background-color: var(--default_mode); */
 }
 
 /* font-size: 3rem; */

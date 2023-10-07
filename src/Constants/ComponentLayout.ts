@@ -7,8 +7,9 @@ import Navbar from "../Components/Navbar";
 import None from "../Components/None";
 import SelectionBox from "../Components/SelectionBox";
 import Todo from "../Components/Todo";
+import SearchBar from "../Components/SearchBar";
 
-export const Component_List = [
+export const Components_List = [
   None,
   Navbar,
   Dropdown,
@@ -18,4 +19,5 @@ export const Component_List = [
   BurgerIcon,
   SelectionBox,
   Todo,
+  SearchBar,
 ];

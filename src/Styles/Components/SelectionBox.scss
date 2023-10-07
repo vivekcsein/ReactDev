@@ -1,4 +1,6 @@
 @use "../Style.scss" as *;
+@use "../ExportVar.scss" as *;
+
 .selectionBox {
   @include selectionBox;
 }

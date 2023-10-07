@@ -1,9 +1,11 @@
-@use "../Style.scss" as style;
+@use "../Style.scss" as *;
+@use "../ExportVar.scss" as *;
+
 .product_section {
   width: 70vw;
   height: auto;
   margin: auto;
-  background-color: nth(style.$bg_color, 3);
+  background-color: nth($bg_color, 3);
 
   .Card_List {
     margin: auto;

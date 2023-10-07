@@ -1,14 +1,15 @@
-@use "../Style.scss" as style;
+// @use "../Style.scss" as *;
+@use "../ExportVar.scss" as *;
 
 .Card {
   width: 300px;
   height: auto;
   // border: 3px solid var(--box_shadow);
-  border: 3px solid style.$box_shadow;
+  border: 3px solid $box_shadow;
   border-radius: 0px 0px 50px 50px;
   margin: 2rem 0;
-  box-shadow: 0 8px 8px 0 style.$box_shadow;
-  background-color: nth(style.$bg_color, 3);
+  box-shadow: 0 8px 8px 0 $box_shadow;
+  background-color: nth($bg_color, 3);
   &:hover {
     scale: 1.1;
     transition: 0.2s linear;

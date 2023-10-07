@@ -1,0 +1,97 @@
+@use "../ExportVar.scss" as *;
+
+@mixin Anim_animateNavLikeButton {
+  background-color: nth($colorBtn, 2);
+  border-radius: 2rem;
+  animation: animateNavLikeButton 0.1s linear;
+}
+
+@mixin hide_opacity($time: 1s) {
+  opacity: 0;
+  animation: gayab $time linear;
+}
+
+@mixin btn_main {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-family: var(--font_4);
+  font-weight: bold;
+  background-color: nth($colorBtn, 1);
+  border-radius: 2rem;
+  border: none;
+  &:hover {
+    background-color: nth($colorBtn, 2);
+    transition: all 0.1s linear;
+  }
+}
+
+@mixin btn_navbar {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  // font-family: var(--font_4);
+  font-weight: bold;
+  &:hover {
+    @include Anim_animateNavLikeButton;
+  }
+}
+
+@mixin btn_info {
+  cursor: pointer;
+  background-color: $white;
+  padding: 0rem 0.5rem;
+  color: #000000;
+}
+
+@mixin toggle_hide($show) {
+  display: $show;
+}
+
+@mixin btn_clickable {
+  background-color: nth($colorBtn, 1);
+  &:hover {
+    cursor: pointer;
+    background-color: nth($colorBtn, 2);
+  }
+}
+
+@mixin selectionBox {
+  width: fit-content;
+  padding: 0.25rem 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: nth($list: $font_family, $n: 4);
+}
+
+@mixin inputText {
+  font-family: nth($list: $font_family, $n: 5);
+  font-weight: 600;
+  color: $black;
+  font-size: calc($font_default_size * 1);
+}
+@mixin placeholder {
+  @include inputText;
+}
+
+@mixin inputBox_width($inputWidth: 600px) {
+  width: calc(var($inputWidth) * 3 + (calc((#{$space}) * 6)));
+}
+
+@mixin inputBox {
+  // width: 100% !important ;
+  // margin: auto;
+  padding: 0.7rem;
+  border: none;
+  box-shadow: 2px 5px $box_shadow;
+  box-sizing: border-box;
+  background: $gradient_input1;
+}
+
+input::placeholder {
+  @include placeholder;
+}
+input[type="text"] {
+  @include inputText;
+}
+input[type="password"] {
+  @include inputText;
+}

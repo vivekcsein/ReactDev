@@ -1,13 +1,12 @@
 //varibales & functions
-@forward "./Partials/variables";
+// @forward "./Partials/variables";
 
 //base and layout
 // @forward "./Partials/base";
 
-@forward "./Partials/breakpoint";
-
-//components(buttons,card, navbar)
-
 //utilities
-// @use "./Partials/variables";
+@forward "./Partials/utils";
+
 // @forward "./Partials/animations";
+//breakpoints
+@forward "./Partials/breakpoint";

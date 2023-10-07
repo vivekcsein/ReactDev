@@ -1,0 +1,44 @@
+@use "../Style.scss" as *;
+@use "../ExportVar.scss" as *;
+
+.footer_container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: nth($list: $bg_color, $n: 3);
+  padding: 3rem;
+
+  .footer_Item {
+    width: fit-content;
+    padding-bottom: 3rem;
+    h1 {
+      text-align: center;
+      color: black;
+    }
+    ul {
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 1rem;
+
+      li {
+        padding: 0.5rem 1rem;
+      }
+      a {
+        text-align: center;
+        &:hover {
+          color: $text_color_onHover;
+        }
+      }
+    }
+  }
+  #copyright_footer {
+    position: absolute;
+    color: black;
+    padding: 1rem;
+    bottom: 1rem;
+  }
+}
