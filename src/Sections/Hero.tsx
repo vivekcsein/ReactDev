@@ -1,6 +1,7 @@
 import SearchBar from "../Components/SearchBar";
 import "../Styles/Sections/Hero.scss";
 import FormUser from "../Components/FormUser";
+// import Counter from "../Components/Counter";
 // import SelectionBox from "../Components/SelectionBox";
 // import Form from "../Components/Form";
 
@@ -15,6 +16,7 @@ const Hero = () => {
       <FormUser />
       {/* <SelectionBox options={season_Theme} /> */}
       <SearchBar />
+      {/* <Counter /> */}
     </div>
   );
 };
